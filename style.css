@@ -1,5 +1,5 @@
 .vericaltext{
-    width:1px;
+    font-size: 24px;
     word-wrap: break-word;
     font-family: monospace; /* this is just for good looks */
     white-space:pre-wrap; /* this is for displaying whitespaces including Moz-FF.*/

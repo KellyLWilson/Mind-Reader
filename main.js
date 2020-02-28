@@ -6,15 +6,15 @@ function getRandom() {
     str = charArray[Math.floor(Math.random() * charArray.length)];
     for (let i = 0; i <= 99; i++) {
         if (i % 9 === 0) {
-            random = str;
+            random = "<span>" + i + ":" + str + "</span><br />";
         } else {
-            random = charArray[Math.floor(Math.random() * charArray.length)];
+            random = "<span>" + i + ":" + charArray[Math.floor(Math.random() * charArray.length)] + "</span><br />";
         }
         randomStrings.push(random);
-        additional.push(str);
 
 
     }
+    additional.push(str);
 }
 
 
@@ -32,25 +32,10 @@ button2 = ["Go, Home, Home, Home, Home, Home"];
 randomStrings = [];
 
 numbers = [];
-for(var i = 1; i <= 20; i++){
+for (var i = 1; i <= 20; i++) {
     numbers.push(i);
 }
 
-
-
-      function showNums() {
-        //var paragraph_container2 = document.getElementById("numbers");
-        if (view == 4) {
-    
-            paragraph_container2.style.display = "block";
-            paragraph_container2.textContent = numbers.toString().split(',').join("");
-            
-    
-        } else {
-            paragraph_container2.style.display = "none";
-        }
-    
-    }   
 // sButton = ["", "NEXT", "NEXT", "NEXT", "REVEAL", ""];
 
 // var sButton_container = document.getElementById("sButtom")
@@ -76,8 +61,8 @@ function populateRandom() {
 
         getRandom();
         paragraph_container.style.display = "block";
-        paragraph_container.textContent = randomStrings.toString().split(',').join("");
-        
+        paragraph_container.innerHTML = randomStrings.toString().split(',').join("");
+
     } else {
         paragraph_container.style.display = "none";
     }
@@ -87,7 +72,7 @@ function populateRandom() {
 
 function hideButton1() {
     var btn = document.getElementById('nextButton');
-    if (view >= 6) {
+    if (view >= 6 || view == 0) {
         btn.style.visibility = 'hidden';
     } else {
         btn.style.visibility = 'visible';
@@ -96,11 +81,11 @@ function hideButton1() {
 
 
 function hideButtonGo() {
-    var btn = document.getElementById('nextButton');
-    if (view <= 6) {
-        btn.style.visibility = 'hidden';
-    } else {
+    var btn = document.getElementById('go');
+    if (view == 0) {
         btn.style.visibility = 'visible';
+    } else {
+        btn.style.visibility = 'hidden';
     }
 }
 
@@ -108,7 +93,7 @@ function hideButtonGo() {
 
 function hideButtonRestart() {
     var btn = document.getElementById('restart');
-    if (view ==0) {
+    if (view == 0) {
         btn.style.visibility = 'hidden';
     } else {
         btn.style.visibility = 'visible';
@@ -143,17 +128,21 @@ function build() {
     paragraph_container.textContent = paragraph[view];
     var additional_container = document.getElementById("additional");
     additional_container.textContent = additional[view];
-    var button2_container = document.getElementById("button2");
-    button2_container.textContent = "";
 
     hideButton1();
     populateRandom();
     hideButtonGo();
     hideButtonRestart();
-    showNums();
+
 }
 
 build();
+
+
+
+
+
+
 
 
 
