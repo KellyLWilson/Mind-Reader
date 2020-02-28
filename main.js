@@ -39,7 +39,7 @@ for(var i = 1; i <= 20; i++){
 
 
       function showNums() {
-        var paragraph_container2 = document.getElementById("numbers");
+        //var paragraph_container2 = document.getElementById("numbers");
         if (view == 4) {
     
             paragraph_container2.style.display = "block";
