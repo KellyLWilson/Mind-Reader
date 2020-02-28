@@ -69,15 +69,10 @@ function populateRandom() {
 
 }
 
-function viewStr() {
-    document.getElementById("randomStrings");    
-    
-    if (view == 5) {
-
-        getRandom();        
+function viewStr() {  
+    if (view == 5) {       
         paragraph_container.style.display = "block";
         paragraph_container.innerHTML = str;
-
     } else {
         paragraph_container.style.display = "none";
     }
