@@ -69,8 +69,8 @@ function populateRandom() {
 
 }
 
-function populateStr() {
-    var paragraph_container = document.getElementById("str");
+function viewStr() {
+    
     if (view == 5) {
 
         getRandom();        
