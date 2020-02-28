@@ -70,6 +70,7 @@ function populateRandom() {
 }
 
 function viewStr() {
+    document.getElementById("randomStrings");    
     
     if (view == 5) {
 
