@@ -14,7 +14,7 @@ function getRandom() {
 
 
     }
-    additional.push(str);
+    //additional.push(str);
 }
 
 
@@ -62,6 +62,21 @@ function populateRandom() {
         getRandom();
         paragraph_container.style.display = "block";
         paragraph_container.innerHTML = randomStrings.toString().split(',').join("");
+
+    } else {
+        paragraph_container.style.display = "none";
+    }
+
+}
+
+function viewStr() {
+    document.getElementById("randomStrings");    
+    
+    if (view == 5) {
+
+        getRandom();        
+        paragraph_container.style.display = "block";
+        paragraph_container.innerHTML = str;
 
     } else {
         paragraph_container.style.display = "none";
@@ -133,7 +148,7 @@ function build() {
     populateRandom();
     hideButtonGo();
     hideButtonRestart();
-
+    populateStr()
 }
 
 build();
