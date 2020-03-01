@@ -69,14 +69,13 @@ function populateRandom() {
 
 }
 
-//function viewStr() {  
-  //  if (view == 5) {       
-    //    document.getElementById("str").style.visibility = "visible";        
-   // } else {
-     //   document.getElementById("str").style.visibility = "hidden";       
- //   }
-
-// }
+function viewStr() {  
+    if (view == 5) {       
+        document.getElementById("str").style.visibility = "visible";        
+    } else {
+        document.getElementById("str").style.visibility = "hidden";       
+    }
+}
 
 
 function hideButton1() {
