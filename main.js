@@ -121,7 +121,6 @@ function previousView() {
 
 
 function restart() {
-    view = 0;
     if (view != 0) {
         view = 0;
         build();
@@ -142,7 +141,7 @@ function build() {
     populateRandom();
     hideButtonGo();
     hideButtonRestart();
-    //viewStr()
+    viewStr()
 }
 
 build();
