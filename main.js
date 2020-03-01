@@ -143,7 +143,7 @@ function build() {
     populateRandom();
     hideButtonGo();
     hideButtonRestart();
-    populateStr()
+    viewStr()
 }
 
 build();
