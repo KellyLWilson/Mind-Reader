@@ -71,10 +71,9 @@ function populateRandom() {
 
 function viewStr() {  
     if (view == 5) {       
-        object.style.visibility = "visible";
-        paragraph_container.innerHTML = str;
+        document.getElementById("str").style.visibility = "visible";        
     } else {
-        object.style.visibility = "hidden";
+        document.getElementById("str").style.visibility = "hidden";       
     }
 
 }
