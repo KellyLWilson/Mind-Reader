@@ -73,9 +73,9 @@ function populateRandom() {
     //    document.getElementById("str").style.visibility = "visible";        
    // } else {
      //   document.getElementById("str").style.visibility = "hidden";       
-    }
+ //   }
 
-}
+// }
 
 
 function hideButton1() {
