@@ -71,10 +71,10 @@ function populateRandom() {
 
 function viewStr() {  
     if (view == 5) {       
-        paragraph_container.style.display = "block";
+        paragraph_container.style.display = block;
         paragraph_container.innerHTML = str;
     } else {
-        paragraph_container.style.display = "none";
+        paragraph_container.style.display = none;
     }
 
 }
