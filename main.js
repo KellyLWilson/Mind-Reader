@@ -11,7 +11,8 @@ function getRandom() {
             random = "<span>" + i + ":" + charArray[Math.floor(Math.random() * charArray.length)] + "</span><br />";
         }
         randomStrings.push(random);
-
+        
+        var str2 = arr.toString(); 
 
     }
     //additional.push(str);
@@ -71,9 +72,9 @@ function populateRandom() {
 
 function viewStr() {  
     if (view == 5) {       
-        document.getElementById("str").style.visibility = "visible";        
+        document.getElementById("str2").style.visibility = "visible";        
     } else {
-        document.getElementById("str").style.visibility = "hidden";       
+        document.getElementById("str2").style.visibility = "hidden";       
     }
 
 }
