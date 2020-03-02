@@ -19,7 +19,7 @@ function getRandom() {
        //additional.push(str);
 }
 
-let singleStr = str;
+let singleStr = random;
 
 //pseudocode
 
