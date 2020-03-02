@@ -11,6 +11,7 @@ function getRandom() {
             random = "<span>" + i + ":" + charArray[Math.floor(Math.random() * charArray.length)] + "</span><br />";
         }
         randomStrings.push(random);
+        let singleStr = str;
         
         
     }
