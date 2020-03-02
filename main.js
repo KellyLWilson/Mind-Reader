@@ -17,7 +17,7 @@ function getRandom() {
         
     }
       
-    additonal.push(str);
+    additional.push(str);
 }
 
 
@@ -128,7 +128,7 @@ function restart() {
     if (view != 0) {
         view = 0;
         build();
-        additional.pop();
+        //additional.pop();
     }
 }
 
