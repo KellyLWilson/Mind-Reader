@@ -17,8 +17,7 @@ function getRandom() {
         
     }
       
-    return str;
-    var singleStr = str;
+    additonal.push(str);
 }
 
 
@@ -74,13 +73,13 @@ function populateRandom() {
 
 }
 
-function viewStr() {  
-    if (view == 5) {       
-        document.getElementById("singleStr").style.visibility = "visible";        
-    } else {
-        document.getElementById("singleStr").style.visibility = "hidden";       
-    }
-}
+//function viewStr() {  
+  //  if (view == 5) {       
+    //    document.getElementById("singleStr").style.visibility = "visible";        
+   // } else {
+     //   document.getElementById("singleStr").style.visibility = "hidden";       
+    //}
+//}
 
 
 function hideButton1() {
@@ -129,6 +128,7 @@ function restart() {
     if (view != 0) {
         view = 0;
         build();
+        additional.pop();
     }
 }
 
@@ -146,7 +146,7 @@ function build() {
     populateRandom();
     hideButtonGo();
     hideButtonRestart();
-    viewStr()
+    //viewStr()
 }
 
 build();
