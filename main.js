@@ -16,8 +16,8 @@ function getRandom() {
         
         
     }
-    let singleStr = random;       
-    //additional.push(str);
+      
+    additional.push(str);
 }
 
 
