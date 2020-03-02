@@ -17,7 +17,7 @@ function getRandom() {
         
     }
       
-    additional.push(str);
+    return str;
 }
 
 
