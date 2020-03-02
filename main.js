@@ -16,10 +16,11 @@ function getRandom() {
         
         
     }
-       //additional.push(str);
+    let singleStr = random;       
+    //additional.push(str);
 }
 
-let singleStr = random;
+
 
 //pseudocode
 
