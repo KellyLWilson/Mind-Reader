@@ -73,13 +73,13 @@ function populateRandom() {
 
 }
 
-function viewStr() {  
-    if (view == 5) {       
-        document.getElementById("singleStr").style.visibility = "visible";        
-    } else {
-        document.getElementById("singleStr").style.visibility = "hidden";       
-    }
-}
+//function viewStr() {  
+  //  if (view == 5) {       
+    //    document.getElementById("singleStr").style.visibility = "visible";        
+    //} else {
+      //  document.getElementById("singleStr").style.visibility = "hidden";       
+    //}
+//}
 
 
 function hideButton1() {
@@ -145,7 +145,7 @@ function build() {
     populateRandom();
     hideButtonGo();
     hideButtonRestart();
-    viewStr()
+    //viewStr()
 }
 
 build();
