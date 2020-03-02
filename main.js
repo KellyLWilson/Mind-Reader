@@ -7,7 +7,7 @@ function getRandom() {
     for (let i = 0; i <= 99; i++) {
         if (i % 9 === 0) {
             random = "<span>" + i + ":" + str + "</span><br />";
-            var singleStr = random;
+            
         } else {
             random = "<span>" + i + ":" + charArray[Math.floor(Math.random() * charArray.length)] + "</span><br />";
         }
@@ -19,6 +19,7 @@ function getRandom() {
        //additional.push(str);
 }
 
+let singleStr = str;
 
 //pseudocode
 
