@@ -18,9 +18,10 @@ function getRandom() {
     }
       
     return str;
+    var singleStr = str;
 }
 
-var singleStr = str;
+
 
 //pseudocode
 
