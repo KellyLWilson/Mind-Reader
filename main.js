@@ -1,5 +1,3 @@
-
-
 function getRandom() {
     var charArray = ['!', '@', '#', '%', '^', '&', '*'];
     var random = "";
@@ -16,7 +14,7 @@ function getRandom() {
         
         
     }
-    //arr.splice(6, 0, str);
+    additional.splice(5, 0, str);
     //additional.push(str);
 }
 
@@ -32,7 +30,7 @@ var view = 0;
 headings = ["I can read your mind", "Pick a number from 01-99", "Add both digits together to get a new number", "Subtract your new number from the original number"];
 paragraph = ["", "when you have your number click next", "Ex: 14 is 1 + 4 = 5", "Ex: 14 - 5 = 9", "Find your new number.", "Your symbol is:"];
 additional = ["", "", "click next to proceed", "click next to proceed", "Note the symbol beside the number"];
-button2 = ["Go, Home, Home, Home, Home, Home"];
+//button2 = ["Go, Home, Home, Home, Home, Home"];
 randomStrings = [];
 
 numbers = [];
@@ -84,7 +82,7 @@ function populateRandom() {
 
 function hideButton1() {
     var btn = document.getElementById('nextButton');
-    if (view >= 6 || view == 0) {
+    if (view >= 5 || view == 0) {
         btn.style.visibility = 'hidden';
     } else {
         btn.style.visibility = 'visible';
