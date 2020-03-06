@@ -16,7 +16,7 @@ function getRandom() {
         
         
     }
-    arr.splice(6, 0, str);
+    //arr.splice(6, 0, str);
     //additional.push(str);
 }
 
