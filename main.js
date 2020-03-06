@@ -1,5 +1,3 @@
-
-
 function getRandom() {
     var charArray = ['!', '@', '#', '%', '^', '&', '*'];
     var random = "";
@@ -7,15 +5,19 @@ function getRandom() {
     for (let i = 0; i <= 99; i++) {
         if (i % 9 === 0) {
             random = "<span>" + i + ":" + str + "</span><br />";
+            
         } else {
             random = "<span>" + i + ":" + charArray[Math.floor(Math.random() * charArray.length)] + "</span><br />";
         }
         randomStrings.push(random);
-
-
+        
+        
+        
     }
+    additional.splice(5, 0, str);
     //additional.push(str);
 }
+
 
 
 //pseudocode
@@ -28,7 +30,7 @@ var view = 0;
 headings = ["I can read your mind", "Pick a number from 01-99", "Add both digits together to get a new number", "Subtract your new number from the original number"];
 paragraph = ["", "when you have your number click next", "Ex: 14 is 1 + 4 = 5", "Ex: 14 - 5 = 9", "Find your new number.", "Your symbol is:"];
 additional = ["", "", "click next to proceed", "click next to proceed", "Note the symbol beside the number"];
-button2 = ["Go, Home, Home, Home, Home, Home"];
+//button2 = ["Go, Home, Home, Home, Home, Home"];
 randomStrings = [];
 
 numbers = [];
@@ -69,25 +71,18 @@ function populateRandom() {
 
 }
 
-function viewStr() {
-    document.getElementById("randomStrings");    
-    
-    if (view == 5) {
-
-        getRandom();        
-        paragraph_container.style.display = "block";
-        paragraph_container.innerHTML = str;
-
-    } else {
-        paragraph_container.style.display = "none";
-    }
-
-}
+//function viewStr() {  
+  //  if (view == 5) {       
+    //    document.getElementById("singleStr").style.visibility = "visible";        
+   // } else {
+     //   document.getElementById("singleStr").style.visibility = "hidden";       
+    //}
+//}
 
 
 function hideButton1() {
     var btn = document.getElementById('nextButton');
-    if (view >= 6 || view == 0) {
+    if (view >= 5 || view == 0) {
         btn.style.visibility = 'hidden';
     } else {
         btn.style.visibility = 'visible';
@@ -131,6 +126,7 @@ function restart() {
     if (view != 0) {
         view = 0;
         build();
+        //additional.pop();
     }
 }
 
@@ -148,7 +144,7 @@ function build() {
     populateRandom();
     hideButtonGo();
     hideButtonRestart();
-    populateStr()
+    //viewStr()
 }
 
 build();
